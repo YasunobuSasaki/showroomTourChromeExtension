@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "SHOWROOM Tour",
+  "description": "This extension SHOWROOM  Auto Preview",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon/icon16.png",
+    "48": "images/icon/icon48.png",
+    "128": "images/icon/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.showroom-live.com/*"
+      ],
+      "css": [],
+      "js": ["js/jquery_min.js", "js/main.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "https://*/*",
+    "http://*/*",
+    "storage",
+    "webNavigation"
+  ]
+}
