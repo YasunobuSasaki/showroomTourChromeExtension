@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "SHOWROOM Tour",
   "description": "This extension SHOWROOM  Auto Preview",
   "version": "1.0",
@@ -13,15 +13,14 @@
       "matches": [
         "https://www.showroom-live.com/*"
       ],
-      "css": [],
       "js": ["js/jquery_min.js", "js/main.js"]
     }
   ],
   "permissions": [
     "tabs",
-    "https://*/*",
-    "http://*/*",
-    "storage",
-    "webNavigation"
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.showroom-live.com/*"
   ]
 }
